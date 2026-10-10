@@ -29,7 +29,7 @@ function Interests() {
   const fetchInterests = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/interest/received",
+        "https://ahirwarsadi-api.onrender.com/api/interest/received",
         { withCredentials: true }
       );
 
@@ -53,7 +53,7 @@ function Interests() {
       setProcessingId(interestId);
 
       await axios.put(
-        `http://localhost:5000/api/interest/${interestId}/respond`,
+        `https://ahirwarsadi-api.onrender.com/api/interest/${interestId}/respond`,
         { status },
         { withCredentials: true }
       );

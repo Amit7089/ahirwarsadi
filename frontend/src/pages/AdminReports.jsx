@@ -16,7 +16,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-const API = "http://localhost:5000/api/admin";
+const API = "https://ahirwarsadi-api.onrender.com/api/admin";
 
 const AdminReports = () => {
   const navigate = useNavigate();

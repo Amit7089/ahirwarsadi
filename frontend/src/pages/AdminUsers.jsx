@@ -33,7 +33,7 @@ const AdminUsers = () => {
       setLoading(true);
       setError("");
 
-      const res = await axios.get("http://localhost:5000/api/admin/users", {
+      const res = await axios.get("https://ahirwarsadi-api.onrender.com/api/admin/users", {
         params: {
           search,
           gender,
@@ -70,7 +70,7 @@ const AdminUsers = () => {
       setUpdatingId(user._id);
 
       const res = await axios.patch(
-        `http://localhost:5000/api/admin/users/${user._id}/block`,
+        `https://ahirwarsadi-api.onrender.com/api/admin/users/${user._id}/block`,
         {},
         {
           withCredentials: true,
@@ -118,7 +118,7 @@ const AdminUsers = () => {
       setUpdatingId(user._id);
 
       const res = await axios.patch(
-        `http://localhost:5000/api/admin/users/${user._id}/verify`,
+        `https://ahirwarsadi-api.onrender.com/api/admin/users/${user._id}/verify`,
         {},
         { withCredentials: true }
       );
@@ -154,7 +154,7 @@ const AdminUsers = () => {
       setUpdatingId(user._id);
 
       const res = await axios.delete(
-        `http://localhost:5000/api/admin/users/${user._id}`,
+        `https://ahirwarsadi-api.onrender.com/api/admin/users/${user._id}`,
         {
           withCredentials: true,
         }

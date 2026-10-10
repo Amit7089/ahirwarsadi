@@ -33,7 +33,7 @@ const ProfileDetails = () => {
     const fetchProfile = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/profile/${id}`,
+          `https://ahirwarsadi-api.onrender.com/api/profile/${id}`,
           { withCredentials: true }
         );
 
@@ -62,7 +62,7 @@ const ProfileDetails = () => {
       setReportLoading(true);
 
       const response = await axios.post(
-        "http://localhost:5000/api/reports",
+        "https://ahirwarsadi-api.onrender.com/api/reports",
         {
           reportedUserId: id,
           reason,

@@ -38,7 +38,7 @@ function Chat() {
     const setupChat = async () => {
       try {
         const matchRes = await axios.get(
-          "http://localhost:5000/api/match",
+          "https://ahirwarsadi-api.onrender.com/api/match",
           {
             withCredentials: true,
           }
@@ -64,7 +64,7 @@ function Chat() {
         // ===== LOAD OLD MESSAGES =====
 
         const chatRes = await axios.get(
-          `http://localhost:5000/api/chat/${matchId}`,
+          `https://ahirwarsadi-api.onrender.com/api/chat/${matchId}`,
           {
             withCredentials: true,
           }
@@ -76,7 +76,7 @@ function Chat() {
 
         // ===== SOCKET CONNECTION =====
 
-        socket = io("http://localhost:5000", {
+        socket = io("https://ahirwarsadi-api.onrender.com", {
           withCredentials: true,
         });
 

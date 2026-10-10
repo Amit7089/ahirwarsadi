@@ -20,7 +20,7 @@ import {
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 
-const API = "http://localhost:5000";
+const API = "https://ahirwarsadi-api.onrender.com";
 
 function Navbar() {
   const [notifications, setNotifications] = useState([]);

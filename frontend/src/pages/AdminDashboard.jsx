@@ -80,7 +80,7 @@ const AdminDashboard = () => {
       setError("");
 
       const res = await axios.get(
-        "http://localhost:5000/api/admin/dashboard",
+        "https://ahirwarsadi-api.onrender.com/api/admin/dashboard",
         {
           withCredentials: true,
         }
@@ -112,7 +112,7 @@ const AdminDashboard = () => {
   const fetchReportStats = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/admin/reports",
+        "https://ahirwarsadi-api.onrender.com/api/admin/reports",
         {
           withCredentials: true,
         }
@@ -144,7 +144,7 @@ const AdminDashboard = () => {
       setPaymentError("");
 
       const res = await axios.get(
-        "http://localhost:5000/api/admin/payments",
+        "https://ahirwarsadi-api.onrender.com/api/admin/payments",
         {
           withCredentials: true,
         }

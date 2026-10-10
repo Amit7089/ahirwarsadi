@@ -17,7 +17,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const API = "http://localhost:5000/api";
+const API = "https://ahirwarsadi-api.onrender.com/api";
 
 const Matches = () => {
   const navigate = useNavigate();

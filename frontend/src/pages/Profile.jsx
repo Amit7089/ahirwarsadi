@@ -16,7 +16,7 @@ import {
   ImagePlus,
 } from "lucide-react";
 
-const API = "http://localhost:5000/api/profile";
+const API = "https://ahirwarsadi-api.onrender.com/api/profile";
 
 const Profile = () => {
   const navigate = useNavigate();

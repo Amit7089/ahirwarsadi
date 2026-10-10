@@ -31,7 +31,7 @@ function Register() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://ahirwarsadi-api.onrender.com/api/users/register",
         formData
       );
 

@@ -34,7 +34,7 @@ const AdminUserDetails = () => {
         setError("");
 
         const res = await axios.get(
-          `http://localhost:5000/api/admin/users/${id}`,
+          `https://ahirwarsadi-api.onrender.com/api/admin/users/${id}`,
           { withCredentials: true }
         );
 

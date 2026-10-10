@@ -20,7 +20,7 @@ import {
   Star,
 } from "lucide-react";
 
-const API = "http://localhost:5000";
+const API = "https://ahirwarsadi-api.onrender.com";
 
 const Browse = () => {
   const navigate = useNavigate();

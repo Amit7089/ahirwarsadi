@@ -4,7 +4,7 @@ import { Heart, Save, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 
-const API = "http://localhost:5000/api/profile";
+const API = "https://ahirwarsadi-api.onrender.com/api/profile";
 
 const PartnerPreferences = () => {
   const navigate = useNavigate();
